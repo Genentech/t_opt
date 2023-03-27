@@ -1,0 +1,28 @@
+
+package:
+  name: t_opt
+  version: {version}
+
+source:
+  url: ../dist/t_opt-{version}.tar.gz
+  md5: {md5}
+
+build:
+  noarch: python
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - openeye-toolkits
+    - cairo
+
+test:
+  requires:
+    - pytest
+    - scripttest
+  imports:
+   - t_opt
