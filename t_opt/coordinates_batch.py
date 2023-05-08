@@ -69,8 +69,8 @@ class SameSizeCoordsBatch:
             This is called when all conformers of a given batch have been added to
             finalize the internal data structure and to move the data onto the device.
         """
-        self.coords     = torch.tensor(self._coords_list, dtype=self.dtype)
-        self.atom_types = torch.tensor(self._at_type_list, dtype=torch.int64)
+        self.coords     = torch.tensor(np.array(self._coords_list), dtype=self.dtype)
+        self.atom_types = torch.tensor(np.array(self._at_type_list), dtype=torch.int64)
         if device is not None:
             self.coords     = self.coords.to(device=device, non_blocking=True)
             self.atom_types = self.atom_types.to(device=device, non_blocking=True)

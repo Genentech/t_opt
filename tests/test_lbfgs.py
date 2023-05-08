@@ -55,7 +55,7 @@ class TestBatchLBFGS():
     # pylint: disable=W0612, W0201
     """ TestBatchLBFGS """
 
-    def setup(self):
+    def setup_method(self):
         self.coords_batch = SameSizeCoordsBatch([7], torch.float)
 
         sdName = "data/N2_1.0_0.9.sdf"

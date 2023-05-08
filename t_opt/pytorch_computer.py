@@ -6,6 +6,7 @@ Created on Feb 8, 2019
 
 import torch
 import logging
+import numpy as np
 from typing import List, Sequence, Iterable, Tuple, Dict, Optional
 
 from t_opt.abstract_NNP_computer import EnergyAndGradHelperHarmConstraint, EnergyAndGradHelperFixedAtoms,\
@@ -90,7 +91,7 @@ class PytorchComputer(AbstractNNPComputer):
                 raise TypeError("HarmConstraint not supported with additional constraints")
             e_helper_o = EnergyAndGradHelperHarmConstraint(e_helper, harm_constraint)
         elif fixed_atoms_list is not None and len(fixed_atoms_list) > 0:
-            fixed_atoms = torch.tensor(fixed_atoms_list, dtype=torch.bool, device=self.device)
+            fixed_atoms = torch.tensor(np.array(fixed_atoms_list), dtype=torch.bool, device=self.device)
             e_helper_o = EnergyAndGradHelperFixedAtoms(e_helper, fixed_atoms)
 
         return e_helper_o
