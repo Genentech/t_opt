@@ -90,7 +90,7 @@ or any other string that will be used to constuct your PyTorch Module.
 
 An Example can be found in ExampleNNPComputerFactory ([NNPComputerFactoryInterface](t_opt/NNP_computer_factory.py)).
 
-Another example is in the g_ani package ([NNP_computer_factory.py]https://github.com/Genentech/g_ani/blob/b2a1d638e38e8fe07e2b23a9abd5aebaa85bf5d0/ml_qm/optimize/NNP_computer_factory.py#L22)).
+Another example is in the g_ani package ([NNP_computer_factory.py](https://github.com/Genentech/g_ani/blob/b2a1d638e38e8fe07e2b23a9abd5aebaa85bf5d0/ml_qm/optimize/NNP_computer_factory.py#L22)).
 
 
 ------------------------
