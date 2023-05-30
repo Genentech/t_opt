@@ -88,7 +88,9 @@ The g_ani package contains an [implementation](https://github.com/Genentech/g_an
 This Interface takes a string parameter and provides a factory for the NeuralNet Potential. The String parameter can be a directory name as used to point to the configuration directory for the [ANI_computer](t_opt.ANI_computer.py), a filename 
 or any other string that will be used to constuct your PyTorch Module.
 
-An Example can be found in ExampleNNPComputerFactory ([NNPComputerFactoryInterface](t_opt/NNP_computer_factory.py))
+An Example can be found in ExampleNNPComputerFactory ([NNPComputerFactoryInterface](t_opt/NNP_computer_factory.py)).
+
+Another example is in the g_ani package ([NNP_computer_factory.py]https://github.com/Genentech/g_ani/blob/b2a1d638e38e8fe07e2b23a9abd5aebaa85bf5d0/ml_qm/optimize/NNP_computer_factory.py#L22)).
 
 
 ------------------------
