@@ -80,7 +80,7 @@ class DummyNet(CoordinateModelInterface):
         return e, e   # fake stdev with e, will not affect tests   
 ```
 
-The g_ani package contains an [implementation](../g_ani/blob/b2a1d638e38e8fe07e2b23a9abd5aebaa85bf5d0/ml_qm/pt/nn/ani_net.py#L277) that uses its NNP implmentation.
+The g_ani package contains an [implementation](https://github.com/Genentech/g_ani/blob/b2a1d638e38e8fe07e2b23a9abd5aebaa85bf5d0/ml_qm/pt/nn/ani_net.py#L277) that uses its NNP implmentation.
 
 ------------------------
 ##### 2. The NNP Computer Factory
